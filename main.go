@@ -1,9 +1,9 @@
 package main
 
 import (
-	"golang-static-server/server"
 	"flag"
 	"fmt"
+	"golang-static-server/server"
 	"os"
 )
 
