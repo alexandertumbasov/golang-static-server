@@ -2,10 +2,11 @@ package controllers
 
 import (
 	"fmt"
-	"github.com/gin-gonic/gin"
-	"go.mongodb.org/mongo-driver/x/mongo/driver/uuid"
 	"net/http"
 	"path/filepath"
+
+	"github.com/gin-gonic/gin"
+	"go.mongodb.org/mongo-driver/x/mongo/driver/uuid"
 )
 
 type File struct{}
