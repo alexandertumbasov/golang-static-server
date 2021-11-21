@@ -2,8 +2,8 @@ package server
 
 import (
 	"github.com/gin-gonic/gin"
-	"golang-static-server/middlewares"
-	"golang-static-server/controllers"
+	"golang-static-server/src/controllers"
+	"golang-static-server/src/middlewares"
 )
 
 func NewRouter() *gin.Engine {
@@ -16,9 +16,9 @@ func NewRouter() *gin.Engine {
 	v1 := router.Group("api/v1")
 	{
 
-		userController := new(controllers.UserController)
+		fileController := new(controllers.File)
 
-		v1.GET("/", userController.GetAll)
+		v1.GET("/file", fileController.SaveFileHandler)
 
 	}
 

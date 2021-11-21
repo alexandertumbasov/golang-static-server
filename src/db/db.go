@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"golang-static-server/utils"
+	"golang-static-server/src/utils"
 	"time"
 )
 
@@ -23,9 +23,6 @@ func Init() *mongo.Client {
 
 }
 
-func Disconnect(ctx context.Context,  client *mongo.Client) {
-	client.Disconnect(ctx);
+func Disconnect(ctx context.Context, client *mongo.Client) {
+	client.Disconnect(ctx)
 }
-
-
-

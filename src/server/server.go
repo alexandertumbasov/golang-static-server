@@ -2,7 +2,7 @@ package server
 
 import (
 	"fmt"
-	"golang-static-server/db"
+	"golang-static-server/src/db"
 )
 
 func Init() {
