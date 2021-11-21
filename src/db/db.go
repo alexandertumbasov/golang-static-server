@@ -24,5 +24,7 @@ func Init() *mongo.Client {
 }
 
 func Disconnect(ctx context.Context, client *mongo.Client) {
-	client.Disconnect(ctx)
+	if err := client.Disconnect(ctx); err != nil {
+		panic(err)
+	}
 }
