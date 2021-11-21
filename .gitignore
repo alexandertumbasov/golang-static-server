@@ -35,5 +35,5 @@ _testmain.go
 vendor/*
 !vendor/vendor.json
 
-.env
+/.env
 /static
